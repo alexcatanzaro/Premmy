@@ -4,9 +4,6 @@ Premier League statbase using GraphQL, Mongo, Postgres, and .js  :soccer:  :rock
 
 ToDo
 ----
-
-  1) DBs
-
-  2)GraphQL
-
-  3)FE
+1) DBs
+2) GraphQL
+3) FE
