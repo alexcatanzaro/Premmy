@@ -2,10 +2,11 @@
 Premier League statbase using GraphQL, Mongo, Postgres, and .js  :soccer:  :rocket:
 
 
-##ToDo
+ToDo
+----
 
-1) DBs
+  1) DBs
 
-2)GraphQL
+  2)GraphQL
 
-3)FE
+  3)FE
