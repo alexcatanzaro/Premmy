@@ -1,0 +1,12 @@
+{
+    "tournament": "",
+    "minsPlayed": "",
+    "goal": "",
+    "assistTotal": "",
+    "yellowCard": "",
+    "redCard": "",
+    "shotsPerGame": "",
+    "passSuccess": "",
+    "aerialWonPerGame": "",
+    "manOfTheMatch": ""
+}
