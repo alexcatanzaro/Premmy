@@ -1,7 +1,7 @@
 
 var express = require('express');
 var fs = require('fs');
-var request = require('request');
+const request = require('request');
 var cheerio = require('cheerio');
 var app = express();
 
@@ -19,7 +19,7 @@ app.get('/scrape', function(req, res){
       let tournament, minsPlayed, goal, assistTotal, yellowCard, redCard, shotsPerGame, passSuccess, aerialWonPerGame, manOfTheMatch;
       let jsonPlayer = {tournament: "", minsPlayed : "", goal : "", assistTotal : "", yellowCard : "", redCard : "", shotsPerGame : "", passSuccess : "", aerialWonPerGame : "", manOfTheMatch : ""};
 
-      $('.player-table-statistics-body').filter(function(){
+      $('#player-table-statistics-body').filter(function(){
 
         playerData = $(this);
 
@@ -30,12 +30,12 @@ app.get('/scrape', function(req, res){
         jsonPlayer.tournament = tournament;
         jsonPlayer.minsPlayed = minsPlayed;
         jsonPlayer.goal = goal;
-
-
       })
 
       fs.writeFile('output.txt', JSON.stringify(jsonPlayer, null, 4), function(err){console.log('file has been written')})
       res.send('Check your console!')
+    }else{
+      console.log(error);
     }
   })
 
